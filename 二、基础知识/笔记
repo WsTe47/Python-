@@ -25,3 +25,20 @@ format（）
 不带小数，则改成 {:.0f}，依次类推。
 
 在逻辑运算中，数字 0 代表 False，1 代表 True。
+
+gedit test.py
+用gedit 编辑器 打开（若无则创建）test.py文件
+在gedit中hello world后Ctrl+s保存，默认保存在 home
+Python3 test.py
+运行test.py文件
+ctrl+d 退出Python
+
+
+
+if else
+pass
+for in 
+while 
+range (左闭右开）
+break(跳出程序）
+continue（跳过此次，后续继续进行）
