@@ -68,3 +68,4 @@ divmod函数：divmod（a，b）返回的是（a//b，a%b)这个元组。
 
 input的时候输入近来的是str类型！！！记得int/float的强制转换
 
+and  or  是短路运算符，既从左到右解析，一旦结果确定就停止继续解析。
