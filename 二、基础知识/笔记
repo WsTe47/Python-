@@ -88,3 +88,10 @@ len 语句
 range 生成的是数列 而不是列表。
 >>>print（range（0，3））                >>>range(0, 3)     
 >>>print(list(range(0,3)))              >>>[0, 1, 2]
+
+
+for  与  else 的连用：
+若无break，则执行完for的内容后执行else内的。
+若有break，则不执行else内的。
+参考自：https://foofish.net/for-else.html
+
