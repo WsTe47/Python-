@@ -113,3 +113,13 @@ append是插入一个元素（元素可以是列表或者其他），extend只�
 a.pop(x)
 会将第x个元素弹出，不加x默认为最后一个
 print（a.pop（））   可以print出弹出的那个数。但print（del a[]）会报错
+
+
+列表推导式：
+<<<a = [x  for x in range(4)]
+<<<a=[0,1,2,3]
+等效于
+<<<a=[]
+<<<for x in range(10):
+<<<    a.append(x)
+
