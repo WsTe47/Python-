@@ -109,3 +109,7 @@ a.extend()
 三者都是插入类型的，
 insert是在a位置插入b（插入后b的索引为a）
 append是插入一个元素（元素可以是列表或者其他），extend只能是插入一个列表。
+
+a.pop(x)
+会将第x个元素弹出，不加x默认为最后一个
+print（a.pop（））   可以print出弹出的那个数。但print（del a[]）会报错
