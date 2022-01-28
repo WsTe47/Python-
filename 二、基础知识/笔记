@@ -95,3 +95,17 @@ for  与  else 的连用：
 若有break，则不执行else内的。
 参考自：https://foofish.net/for-else.html
 
+
+列表：
+a.count（x）  x的个数
+a.remove(x)   去除x
+a.reverse()   反转
+a.sort()      排序
+del a[x]      删除x位置的元素
+
+a.insert(a,b)
+a.append()
+a.extend()
+三者都是插入类型的，
+insert是在a位置插入b（插入后b的索引为a）
+append是插入一个元素（元素可以是列表或者其他），extend只能是插入一个列表。
