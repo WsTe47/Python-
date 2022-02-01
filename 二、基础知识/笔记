@@ -196,3 +196,20 @@ def  定义函数
 若函数内部没有出现a在等于号左边的情况（无论在使用前后），则使用的是全局的。
 若函数内部有出现，则使用的是局部的。
 加上 global a  语句，则使用的全部为全局的。（先加，加在一开始）
+
+函数默认参数，eg：def test(a , b=-99)
+若有传入值，则b取传入值。若无传入，则b取默认值。   eg：test（1，2）则a=1，b=2
+默认值只会赋值一次。eg：
+>>> def f(a, data=[]):
+...     data.append(a)
+...     return data
+...
+>>> print(f(1))         [1]      此处生效，data=[]
+>>> print(f(2))         [1, 2]   此处不再重新赋值，data=[1]
+若想没吃都重新赋值，可以用if循环。eg：
+>>> def f(a, data=None):
+...     if data is None:
+...         data = []
+...     data.append(a)
+...     return data
+
