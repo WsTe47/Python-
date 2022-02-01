@@ -154,3 +154,37 @@ eg：
 >>> b = ['OpenSUSE', 'Fedora']
 >>> for x, y in zip(a, b):
 ...     print("{} uses {}".format(x, y))
+
+
+字符串：
+表示   ‘ ’  “ ”    ‘“ ”’   单双引号相同，三引号可以表示带有换行的内容
+title（）    返回 首字母大写，其余小写
+upper（）    返回 全部变成大写
+lower（）    返回 全部变成小写
+swapcase（） 返回 大小写交换
+isalpha（）  检索是否只有字母，返回True/False
+isalnum（）  检索是否只有字母和数字（若有空格，也是False）
+split（）    分割字符
+xx.join（‘  ’）     使用xx连接多个字符串，它需要一个包含字符串元素的列表作为输入然后连接列表内的字符串元素。
+eg：>>> "-".join("GNU/Linux is great".split())
+        'GNU/Linux-is-great'
+x.strip(chars)   剥离x字符串首尾中指定的字符,不加参数默认剥离空格与换行
+x.lstrip(chars)   x.rstrip(chars)   左剥离与右剥离
+eg：>>> s = "www.foss.in"
+    >>> s.lstrip("cwsd.") #删除在字符串左边出现的'c','w','s','d','.'字符
+       'foss.in'
+    >>> s.rstrip("cnwdi.") #删除在字符串右边出现的'c','n','w','d','i','.'字符
+       'www.foss'
+       
+x.find（‘xxx’）  搜索x字符串中是否有xxx，若有则返回首下标，若无则返回 -1
+x.startswith("xx")    检查x字符串是否以xx开头
+x.endswith("xx")      检查x字符串是否以xx结尾
+
+% 类似于 format
+eg：print("my name is %s.I am %d years old" % ('Climber47',21))
+    my name is Climber47.I am 21 years old
+%s 字符串（用 str() 函数进行字符串转换）
+%r 字符串（用 repr() 函数进行字符串转换）
+%d 十进制整数
+%f 浮点数
+%% 字符 %
