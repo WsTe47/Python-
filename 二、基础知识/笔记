@@ -247,3 +247,11 @@ eg：
 ...
 >>> print(list(map(square, lst)))
 [1, 4, 9, 16, 25]
+
+open（）：   f1=open（‘xxx’）    有三种打开方式，r 只读，w 写入 ，a 追加。w和a的区别是 w是覆盖重写，a是跟在最后写。
+read（）：   s=f1.read（）   
+close（）:   f1.close()
+readline(): 读一行
+readlines（）:读完之后放到一个列表里
+with：with是封装后的try...expect。 用法： with open（）：-------------打开完后会自动关闭文件
+try...expect...：执行try内的，若报错则执行expect，否则跳过
